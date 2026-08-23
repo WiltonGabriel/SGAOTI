@@ -1,11 +1,11 @@
-package ui;
+package ui.cli;
 
 import java.util.Scanner;
 
-public class MainMenu {
+public class MainMenuCLI {
     private Scanner scanner;
 
-    public MainMenu() {
+    public MainMenuCLI() {
         this.scanner = new Scanner(System.in);
     }
 
