@@ -15,7 +15,8 @@ O projeto adota separação estrita de camadas e responsabilidades:
   - model/: Classes de domínio puro (entidades). Apenas atributos, construtores, getters/setters e regras de validação básica dos dados (ex: Ativo, Componente, Categoria).
   - repository/: Camada de persistência e acesso a dados. Responsável por salvar, consultar, atualizar e deletar registros. Inicialmente baseado em memória, futuramente desacoplado para bancos de dados relacionais.
   - service/: Núcleo das regras de negócio. Processamento de dados, lógica de desmontagem, vínculos de componentes e motor de sugestões.
-  - ui/: Camada de interface com o usuário (CLI). Menus interativos, leitura de inputs do teclado, validações de entrada e renderização de saídas no terminal.
+  - ui/: Camada das interfaces com o usuário. Menus interativos, leitura de inputs do teclado, validações de entrada e renderização de saídas no terminal.
+    - cli/: Camada de Interface de Linha de Comando
   - util/: Métodos utilitários e funções auxiliares reutilizáveis (formatação de texto, geradores de identificadores, datas e logs).
 
 ## Padrão de Commits
