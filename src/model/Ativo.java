@@ -59,4 +59,15 @@ public class Ativo {
         return componentes;
     }
 
+    public static boolean isValidStatus(String status) {
+        return status.equalsIgnoreCase("Funcionando") || status.equalsIgnoreCase("Defeito") || status.equalsIgnoreCase("Desconhecido") || status.equalsIgnoreCase  ("Inoperante");
+    }
+
+    public static boolean isValidCategoria(String categoria) {
+        return categoria.equalsIgnoreCase("CPU") || categoria.equalsIgnoreCase("Mobo") || categoria.equalsIgnoreCase("RAM") || categoria.equalsIgnoreCase("GPU") || categoria.equalsIgnoreCase("HD") || categoria.equalsIgnoreCase("SSD") || categoria.equalsIgnoreCase("Fonte") || categoria.equalsIgnoreCase("Gabinete");
+    }
+
+    public static boolean requiresSocket(String padraoEncaixe) {
+        return padraoEncaixe.equalsIgnoreCase("CPU") || padraoEncaixe.equalsIgnoreCase("Mobo") || padraoEncaixe.equalsIgnoreCase("RAM");
+    }
 }
